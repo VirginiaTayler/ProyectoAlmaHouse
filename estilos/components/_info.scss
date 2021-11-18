@@ -1,0 +1,129 @@
+
+.principalInfo{
+    background-image: url(/img/infofondo.jpg);
+    height: 100vh;
+    width: 100%;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    ". ."
+    "parrafoInfo Mapa"
+    ". ."; 
+
+    & h3{
+        font-size: 50px;
+        padding: 40px;
+    }
+
+}
+
+
+.parrafoInfo { 
+    
+    grid-area: parrafoInfo; 
+
+    & p{
+        font-family: 'Roboto';
+        background-color: white;
+        border-radius: 50px;
+        box-shadow: 2px 2px black;
+        width: 700px;
+        padding: 35px;
+        margin-left: 50px;
+        animation: aparecen 3s;
+    }
+}
+.Mapa { 
+    grid-area: Mapa;
+    
+    & .mapaInfo{
+        height: 350px;
+        width: 700px;
+    }
+}
+
+@media only screen and (max-width : 1450px){
+
+    .Mapa { 
+        grid-area: Mapa;
+        
+        & .mapaInfo{
+            height: 250px;
+            width: 500px;
+        }
+    }
+
+    .principalInfo{
+        background-image: url(/img/infofondo.jpg);
+        height: 100vh;
+        width: 100%;
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        ". ."
+        "parrafoInfo ."
+        "Mapa ."; 
+    
+        & h3{
+            font-size: 40px;
+            padding: 40px;
+        }
+    
+    }
+
+
+}
+
+@media only screen and (max-width : 770px){
+    
+    .Mapa { 
+        grid-area: Mapa;
+        
+        & .mapaInfo{
+            height: 150px;
+            width: 400px;
+        }
+    }
+
+    .principalInfo{
+        background-image: url(/img/infofondo.jpg);
+        height: 100vh;
+        width: 100%;
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        ". ."
+        "parrafoInfo ."
+        "Mapa ."; 
+    
+        & h3{
+            font-size: 30px;
+            padding: 40px;
+        }
+    
+    }
+    
+    .parrafoInfo { 
+    
+        grid-area: parrafoInfo; 
+    
+        & p{
+            font-family: 'Roboto';
+            background-color: white;
+            border-radius: 50px;
+            box-shadow: 2px 2px black;
+            width: 250px;
+            padding: 35px;
+            margin-left: 50px;
+            animation: aparecen 3s;
+            font-size: 14px;
+        }
+    }
+    
+    }
