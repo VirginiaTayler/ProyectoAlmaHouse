@@ -138,16 +138,8 @@ footer p {
 
 .principalInfo {
   background-image: url(/img/infofondo.jpg);
-  height: 100vh;
-  width: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
-      grid-template-areas: ". ." "parrafoInfo Mapa" ". .";
+  min-height: 100vh;
+  margin-bottom: 1rem;
 }
 
 .principalInfo h3 {
@@ -155,109 +147,109 @@ footer p {
   padding: 40px;
 }
 
+.banner {
+  text-align: center;
+}
+
 .parrafoInfo {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: parrafoInfo;
+  margin-bottom: 1rem;
 }
 
 .parrafoInfo p {
   font-family: 'Roboto';
   background-color: white;
-  border-radius: 50px;
   -webkit-box-shadow: 2px 2px black;
           box-shadow: 2px 2px black;
-  width: 700px;
   padding: 35px;
-  margin-left: 50px;
   -webkit-animation: aparecen 3s;
           animation: aparecen 3s;
 }
 
-.Mapa {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: Mapa;
-}
-
-.Mapa .mapaInfo {
-  height: 350px;
-  width: 700px;
-}
-
-@media only screen and (max-width: 1450px) {
-  .Mapa {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    grid-area: Mapa;
-  }
-  .Mapa .mapaInfo {
-    height: 250px;
-    width: 500px;
-  }
-  .principalInfo {
-    background-image: url(/img/infofondo.jpg);
-    height: 100vh;
-    width: 100%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-        grid-template-areas: ". ." "parrafoInfo ." "Mapa .";
-  }
-  .principalInfo h3 {
-    font-size: 40px;
-    padding: 40px;
+@media screen and (min-width: 992px) {
+  .container {
+    width: 100vw;
+    max-width: none;
   }
 }
 
-@media only screen and (max-width: 770px) {
-  .Mapa {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    grid-area: Mapa;
+.principalProd {
+  background-image: url(/img/infofondo.jpg);
+  height: 100vh;
+  width: 100%;
+}
+
+.principalProd h3 {
+  padding: 40px;
+}
+
+.carousel {
+  height: 300px;
+  width: 500px;
+  margin: auto;
+}
+
+@media (max-width: 400px) {
+  .carousel {
+    height: 300px;
+    width: 300px;
+    margin: auto;
   }
-  .Mapa .mapaInfo {
-    height: 150px;
-    width: 400px;
-  }
-  .principalInfo {
-    background-image: url(/img/infofondo.jpg);
-    height: 100vh;
-    width: 100%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-        grid-template-areas: ". ." "parrafoInfo ." "Mapa .";
-  }
-  .principalInfo h3 {
-    font-size: 30px;
-    padding: 40px;
-  }
-  .parrafoInfo {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: parrafoInfo;
-  }
-  .parrafoInfo p {
-    font-family: 'Roboto';
-    background-color: white;
-    border-radius: 50px;
-    -webkit-box-shadow: 2px 2px black;
-            box-shadow: 2px 2px black;
-    width: 250px;
-    padding: 35px;
-    margin-left: 50px;
-    -webkit-animation: aparecen 3s;
-            animation: aparecen 3s;
-    font-size: 14px;
-  }
+}
+
+.principalTips {
+  background-image: url(/img/infofondo.jpg);
+  height: 100vh;
+  width: 100%;
+}
+
+.principalTips h3 {
+  padding: 40px;
+}
+
+.video {
+  margin-bottom: 2rem;
+}
+
+.video iframe {
+  height: 250px;
+  width: 90%;
+}
+
+.principalCont {
+  background-image: url(/img/infofondo.jpg);
+  height: 100vh;
+  width: 100%;
+}
+
+.principalCont h3 {
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+form {
+  border: 2px solid #252525;
+  margin: 60px;
+  padding: 40px;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid;
+  padding: 10px;
+  border-color: #252525;
+}
+
+.nom, .cons, .rad, .desp {
+  padding-top: 30px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #252525;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 30px 15px 0px 0px;
 }
 /*# sourceMappingURL=estilos.css.map */
