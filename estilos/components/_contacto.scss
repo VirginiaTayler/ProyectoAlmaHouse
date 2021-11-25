@@ -12,8 +12,10 @@
 
 form{
     border: 2px solid #252525;
-    margin: 60px;
+    margin: auto;
+    margin-top: 60px;
     padding: 40px;
+    width: 450px;
 }
 
 input{
@@ -21,11 +23,14 @@ input{
     border-bottom: 2px solid;
     padding: 10px;
     border-color: #252525;
+    margin: 20px;
 }
 
-.nom, .cons, .rad, .desp{
-    padding-top: 30px;
+textarea{
+    margin-top: 30px;
+
 }
+
 
 
 input[type=button], input[type=submit], input[type=reset] {
@@ -37,4 +42,12 @@ input[type=button], input[type=submit], input[type=reset] {
     cursor: pointer;
     margin: 30px 15px 0px 0px;
     
+}
+
+
+@media (max-width: 400px){
+    
+    form{
+        width: 280px;
+    }
 }

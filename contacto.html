@@ -45,50 +45,30 @@
 
         <h3><a href="https://www.instagram.com/almahouse_uy/">Hacé click acá</a> para contactarnos en instagram</h3>
 
-        <div class="row">
-
-            <div class="formulario col-lg-6">
-                <form action="" method="">
-                    <div class="nom">
-                        <label for="nombre">Nombre:</label>
-                        <input size=32 type="text" name="nombre">
-                    </div>
-            
-                    <div class="cons">
-                        <label for="consulta">Tu consulta:</label><br>
-                        <input style="width: 370px; height: 120px;" type="text" name="consulta">
-                    </div>
-                    
-            
-                    <div class="rad">
-                        <label for="nuevo">¿Sos un cliente nuevo en Alma House?</label>
-                        <input type="radio" name="nuevo" value="afirmativo"> Sí 
-                        <input type="radio" name="nuevo" value="negativo"> No 
-                    </div>
-            
-                    <div class="desp">
-                        <label for="desplegable">Por favor seleccioná el motivo de tu consulta</label><br>
-                        <select name="desplegable">
-                            <option value=""></option>
-                            <option value="problema">Tuve un problema con una compra</option>
-                            <option value="devolucion">Quiero devolver un artículo</option>
-                            <option value="pagos">Consulta sobre pagos</option>
-                            <option value="sugerencias">Sugerencias</option>
-                            <option value="otros">Otros</option>
-            
-                        </select>
-                    </div>
-            
-                    <div>
-                        <input type="reset" value="Cancelar">
-                        <input type="submit" value="Enviar">
-                    </div>
-                </form>
-            </div>
+        <form id="fs-frm" name="department-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+            <fieldset id="fs-frm-inputs">
+                <label for="full-name">Nombre</label>
+                <input type="text" name="name" id="full-name" placeholder="Nombre y apellido" required=""><br>
+                <label for="email-address">Email</label>
+                <input type="email" name="_replyto" id="email-address" placeholder="email@ejemplo.com" required=""><br>
+                <label for="department">Motivo de consulta</label>
+                <select name="department" id="department" required=""><br>
+                <option value="Select" selected="" disabled="">Seleccionar</option>
+                <option value="Consulta1">Consulta sobre envíos</option>
+                <option value="Consulta2">Consulta sobre un producto</option>
+                <option value="Consulta3">Devoluciones</option>
+                <option value="Consulta4">Ubicación</option>
+                </select><br>
+                <label for="message">Consulta</label>
+                <textarea rows="5" name="message" id="message" placeholder="Escriba su mensaje aquí" required=""></textarea>
+                <input type="hidden" name="_subject" id="email-subject" value="Department Contact Form Submission">
+            </fieldset>
+            <input type="submit" value="Enviar"> <input type="reset" value="Cancelar">
+        </form>
 
             
         
-        </div>
+        
     </main>
 
     <footer>
