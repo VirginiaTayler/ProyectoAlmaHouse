@@ -27,7 +27,7 @@
 
 .principal {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(/img/iniciofondo.jpg);
 }
 
@@ -174,7 +174,7 @@ footer p {
 
 .principalProd {
   background-image: url(/img/infofondo.jpg);
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
 
@@ -198,7 +198,7 @@ footer p {
 
 .principalTips {
   background-image: url(/img/infofondo.jpg);
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
 
@@ -217,7 +217,7 @@ footer p {
 
 .principalCont {
   background-image: url(/img/infofondo.jpg);
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
 
